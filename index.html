@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+
+    <title>Mood Tracker</title>
+  </head>
+  <body>
+    <div class="mood-container">
+      <div class="mood-heading">
+        <h1>Track Your Mood</h1>
+      </div>
+
+      <div class="mood-history">
+        <h2>🧑‍💼Activity Calendar</h2>
+
+        <div class="calendar"></div>
+      </div>
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color legend-happy"></div>
+          <span>Happy</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color legend-neutral"></div>
+          <span>Neutral</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color legend-sad"></div>
+          <span>Sad</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color legend-angry"></div>
+          <span>Angry</span>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-smile"></i>
+          </div>
+          <div class="stat-value" id="happy-count">0</div>
+          <div class="stat-label">Happy Days</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-meh"></i>
+          </div>
+          <div class="stat-value" id="neutral-count">0</div>
+          <div class="stat-label">Neutral Days</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-frown"></i>
+          </div>
+          <div class="stat-value" id="sad-count">0</div>
+          <div class="stat-label">Sad Days</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-angry"></i>
+          </div>
+          <div class="stat-value" id="angry-count">0</div>
+          <div class="stat-label">Angry Days</div>
+        </div>
+      </div>
+
+      <div class="mood-input-container">
+        <div class="mood-input-label">Enter your mood today:</div>
+        <div class="emotions-container">
+          <button class="emotion-btn" id="happy">😄</button>
+          <button class="emotion-btn" id="neutral">😑</button>
+          <button class="emotion-btn" id="sad">😞</button>
+          <button class="emotion-btn" id="angry">😠</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
